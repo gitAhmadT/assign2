@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: #fff;
+  padding: 0.5rem 1rem; /* Reduced padding for a smaller navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem; /* Adjusted size for a smaller logo */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items .nav-item {
+  margin-left: 20px;
+}
+
+.nav-items .nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem; /* Adjusted size for navigation links */
+}
+
+.nav-items .nav-item a:hover {
+  color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+  background-image: url("../images/header-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px; /* Padding for fixed navbar */
+}
+
+.header .main-heading {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.header .btn {
+  padding: 10px 20px;
+  border: none;
+  background: #ff6f61;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.header .btn:hover {
+  background: #ff4f41;
+}
+
+/* Card Styles */
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-content {
+  padding: 1rem;
+  width: 50%;
+}
+
+.card .card-content h3 {
+  margin-top: 0;
+}
+
+.card .card-content p {
+  margin-bottom: 0;
+}
+
+.triplet-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.triplet-card {
+  flex: 1;
+  margin: 0 1rem;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.triplet-card h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.triplet-card.adventure {
+  background: #f44336; /* Red */
+}
+
+.triplet-card.less-price {
+  background: #ff9800; /* Orange */
+}
+
+.triplet-card.experience {
+  background: #4caf50; /* Green */
+}
+
+/* Footer Styles */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer .footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.footer .footer-section h3 {
+  margin-bottom: 20px;
+}
+
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .footer-section ul li a:hover {
+  color: #ff6f61;
+}
+
+.footer .social-media-links i {
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.footer .social-media-links i:hover {
+  color: #ff6f61;
+}
+
+.footer p {
+  margin-top: 20px;
+}
+
+/* About and Contact Page Styles */
+.about,
+.contact {
+  padding: 2rem;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.about h2,
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p,
+.contact p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form label {
+  margin-bottom: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact form button {
+  padding: 10px;
+  border: none;
+  background: #ff6f61;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: #ff4f41;
+}
